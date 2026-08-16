@@ -1,17 +1,17 @@
         INP
-        STA NUM
+        STA NUM1
         INP
-        STA FIM
-LOOP    LDA NUM
+        STA NUM2
+LOOP    LDA NUM1
         OUT
-        LDA NUM
-        SUB FIM
-        BRZ FIMOU
-        LDA NUM
+        LDA NUM1
+        SUB NUM2
+        BRZ ENCERRAR
+        LDA NUM1
         ADD UM
-        STA NUM
+        STA NUM1
         BRA LOOP
-FIMOU   HLT
-NUM     DAT 0
-FIM     DAT 0
+ENCERRAR   HLT
+NUM1     DAT 0
+NUM2     DAT 0
 UM      DAT 1
