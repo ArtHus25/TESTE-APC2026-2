@@ -47,10 +47,6 @@ Para resolver o problema, primeiro foi necessário compreender a lógica matemá
 
 0, 1, 1, 2, 3, 5, 8, 13, 21...
 
-Matematicamente, podemos representar essa relação como:
-
-F(n) = F(n-1) + F(n-2)
-
 Isso significa que, para calcular o próximo número, precisamos guardar os dois valores anteriores e somá-los. Por exemplo, depois de 0 e 1, fazemos 0 + 1 = 1. Em seguida, 1 + 1 = 2, depois 1 + 2 = 3, e assim sucessivamente.
 
 Depois de compreender a operação matemática, o próximo passo foi transformar essa lógica em um fluxograma, representando visualmente a sequência de instruções que o programa deveria executar. O fluxograma ajudou a organizar as entradas, operações, repetições e condições necessárias para que o algoritmo funcionasse corretamente.
