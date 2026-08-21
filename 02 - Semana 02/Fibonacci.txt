@@ -11,7 +11,7 @@
         ADD UM
         STA POS
 LOOP    LDA FIB1
-        ADD FIB0
+        ADD FIB2
         STA FIB
         OUT
         LDA POS
