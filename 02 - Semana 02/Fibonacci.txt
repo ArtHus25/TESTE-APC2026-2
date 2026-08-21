@@ -1,26 +1,26 @@
         INP
         STA N
-        LDA FIB-2
+        LDA FIB1
         OUT
         LDA POS
         ADD UM 
         STA POS
-        LDA FIB-1
+        LDA FIB2
         OUT
         LDA POS
         ADD UM
         STA POS
-LOOP    LDA FIB-2
-        ADD FIB-1
+LOOP    LDA FIB1
+        ADD FIB0
         STA FIB
         OUT
         LDA POS
         ADD UM
         STA POS
-        LDA FIB-1
-        STA FIB-2
+        LDA FIB2
+        STA FIB1
         LDA FIB
-        STA FIB-1
+        STA FIB2
         LDA N
         SUB POS
         BRP LOOP
@@ -28,6 +28,6 @@ LOOP    LDA FIB-2
 UM      DAT 1
 N       DAT 
 POS     DAT 0
-FIB-1   DAT 1
-FIB-2   DAT 0
+FIB2    DAT 1
+FIB1    DAT 0
 FIB     DAT
