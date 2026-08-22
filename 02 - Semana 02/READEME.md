@@ -25,3 +25,17 @@ Em seguida, o programa soma o primeiro valor **(FIB1)** com o segundo **(FIB2)**
 Para manter a sequência de Fibonacci, o valor de **(FIB2)** é armazenado em FIB1, enquanto o resultado da soma **(FIB)** é armazenado em **(FIB2)**. Dessa forma, os dois valores são atualizados para realizar as próximas somas.
 
 Por fim, o programa utiliza um loop com uma condicional para imprimir a quantidade de números definida pelo valor de entrada **(N)**. A posição **(POS)** é subtraída **(SUB)** do valor de entrada **(N)** e, enquanto o resultado for positivo **(BRP)**, o programa retorna para a soma dos novos valores de **(FIB1)** e **(FIB2)**. A cada número impresso, a posição é incrementada em 1. Quando POS atinge o valor de entrada N, a condição deixa de ser atendida e o programa é finalizado.**(HLT)**
+
+## Multiplicação de dois números
+### **Objetivo**
+
+O programa recebe a entrade de dois números e deve imprimir o resultado da multiplicação
+
+---
+### **Funcionamento**
+
+O programa recebe os valores iniciais **(NUM1)** e **(NUM2)** e armazena **(STA)** ambos. Para multiplicarmos um números usamos uma soma **(ADD)** sucessiva do primeiro valor **(NUM1)** por ele mesmo igual ao valor da segunda entrada **(NUM2)**.
+
+Primeiramente, o programa verifica o segundo valor **(NUM2)** por meio de uma condicional. Se ele for igual a 0 **(BRZ)**, o programa carrega **(LDA)** a variável **(RESULTADO)**, que possui o valor inicial 0. Caso contrário, o programa carrega o primeiro valor **(NUM1)**, realiza a soma **(ADD)** com **(RESULTADO)** e armazena **(STA)** o novo resultado.
+
+Em seguida, o programa carrega **(NUM2)** novamente utilizando **(LDA)**, subtrai **(SUB)** 1 e armazena **(STA)** o novo valor. Depois, entra em um loop por meio de **(BRA)**, retornando para verificar novamente o valor de **(NUM2)**. Esse processo de soma sucessiva continua até que **(NUM2)** chegue a 0, imprimendo o valor do resultado e encerrando o programa.

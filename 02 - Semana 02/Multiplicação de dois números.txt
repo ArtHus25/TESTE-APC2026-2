@@ -1,0 +1,20 @@
+          INP
+          STA NUM1
+          INP 
+          STA NUM2
+LOOP      LDA NUM2
+          BRZ FIM
+          LDA RESULTADO
+          ADD NUM1
+          STA RESULTADO
+          LDA NUM2
+          SUB UM
+          STA NUM2
+          BRA LOOP
+FIM       LDA RESULTADO
+          OUT
+          HLT
+NUM1      DAT 0
+NUM2      DAT 0
+RESULTADO DAT 0
+UM        DAT 1
