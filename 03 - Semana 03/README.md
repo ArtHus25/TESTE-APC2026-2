@@ -13,8 +13,8 @@ Caso o número ainda não seja igual o programa soma 1 **(ADD)** ao valor de atu
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
-|10,2,3,0|15|O programa recebeu a sequência de números e somou até receber o 0, e mostrou o resultado da soma da sequência|
-|5,0|5|O programa recebeu somente um valor e recebeu o valor de parada 0, e mostrou o único valor|
+|10;2;3;0|15|O programa recebeu a sequência de números e somou até receber o 0, e mostrou o resultado da soma da sequência|
+|5;0|5|O programa recebeu somente um valor e recebeu o valor de parada 0, e mostrou o único valor|
 
 
 ## 2. Contar quantos números foram digitados até o usuário digitar -1
@@ -34,8 +34,8 @@ Por fim, o programa utiliza um loop com uma condicional para imprimir a quantida
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
-|2,3,5,6,7,-1|5|O programa recebe os valores e foi somando a quantidade até receber o valor de parada -1 e mostrou na tela a quantidade|
-|10,-1|1|O programa só recebeu um valor significativo e o valor de parada -1 e mostou na tela a quantidade única do valor recebido|
+|2;3;5;6;7;-1|5|O programa recebe os valores e foi somando a quantidade até receber o valor de parada -1 e mostrou na tela a quantidade|
+|10;-1|1|O programa só recebeu um valor significativo e o valor de parada -1 e mostou na tela a quantidade única do valor recebido|
 
 ## 3. Encontrar o menor valor de uma série de números terminada em -1
 ### **Objetivo**
@@ -53,8 +53,8 @@ Em seguida, o programa carrega **(NUM2)** novamente utilizando **(LDA)**, subtra
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
-|10,5,2,1,-1|1|O programa recebeu a série de números, armazena os resultados, sempre procurando o menor valor, quando recebe o valor de parada -1 mostra o menor valor na tela. |
-|1,0,2,-1|0|O programa recebeu os valores buscou o menor e mostou na saída depois de receber o valor de parada -1|
+|10;5;2;1;-1|1|O programa recebeu a série de números, armazena os resultados, sempre procurando o menor valor, quando recebe o valor de parada -1 mostra o menor valor na tela. |
+|1;0;2;-1|0|O programa recebeu os valores buscou o menor e mostou na saída depois de receber o valor de parada -1|
 
 ## 4. Encontrar o maior valor de uma série de números terminada em -1
 ### **Objetivo**
@@ -72,8 +72,8 @@ Em seguida, o programa carrega **(NUM2)** novamente utilizando **(LDA)**, subtra
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
-|10,5,2,1,-1|10|O programa recebeu a série de números, armazena os resultados, sempre procurando o maior valor, quando recebe o valor de parada -1 mostra o maior valor na tela. |
-|1,0,2,-1|2|O programa recebeu os valores buscou o maior e mostou na saída depois de receber o valor de parada -1|
+|10;5;2;1;-1|10|O programa recebeu a série de números, armazena os resultados, sempre procurando o maior valor, quando recebe o valor de parada -1 mostra o maior valor na tela. |
+|1;0;2;-1|2|O programa recebeu os valores buscou o maior e mostou na saída depois de receber o valor de parada -1|
 
 ## 5. Cálcular a média de uma série terminada em -1
 ### **Objetivo**
@@ -91,8 +91,8 @@ Em seguida, o programa carrega **(NUM2)** novamente utilizando **(LDA)**, subtra
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
-|10,5,2,1,-1|1|O programa recebeu a série de números, armazena os resultados, sempre procurando o menor valor, quando recebe o valor de parada -1 mostra o menor valor na tela. |
-|1,0,2,-1|0|O programa recebeu os valores buscou o menor e mostou na saída depois de receber o valor de parada -1|
+|10;5;2;1;-1|1|O programa recebeu a série de números, armazena os resultados, sempre procurando o menor valor, quando recebe o valor de parada -1 mostra o menor valor na tela. |
+|1;0;2;-1|0|O programa recebeu os valores buscou o menor e mostou na saída depois de receber o valor de parada -1|
 
 ## 6. Contar quantos números positivos e quantos negativos foram digitados em uma série terminada em 0
 ### **Objetivo**
@@ -110,5 +110,5 @@ Em seguida, o programa carrega **(NUM2)** novamente utilizando **(LDA)**, subtra
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
-|1,5,2,-1,-2,-3,0|3,3|O programa recebeu a série de números, conta quantos números positivos e quantos negativos foram digitados, e mostra na tela os dois valores depois do valor de parada 0. |
-|1,0,2,-1,-3,-4|2,3|O programa recebeu os valores de uma série os números positivos tinham menor quantidade que os negativos, recebeu o valor de parada 0 e mostrou os valores.|
+|1;5;2;-1;-2;-3;0|3;3|O programa recebeu a série de números, conta quantos números positivos e quantos negativos foram digitados, e mostra na tela os dois valores depois do valor de parada 0. |
+|1;0;2;-1;-3;-4|2;3|O programa recebeu os valores de uma série os números positivos tinham menor quantidade que os negativos, recebeu o valor de parada 0 e mostrou os valores.|
