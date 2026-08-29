@@ -1,0 +1,10 @@
+INICIO  INP
+        BRZ END
+        STA NUM1
+        ADD RESULTADO
+        STA RESULTADO
+        BRA INICIO
+END     LDA RESULTADO
+        OUT HLT
+NUM1    DAT 
+RESULTADO DAT 0

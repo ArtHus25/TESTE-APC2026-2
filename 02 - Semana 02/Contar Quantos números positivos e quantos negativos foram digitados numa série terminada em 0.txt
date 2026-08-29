@@ -1,0 +1,19 @@
+INICIO  INP
+        BRZ END
+        BRP POS
+        LDA NEGATIVOS
+        ADD UM
+        STA NEGATIVOS
+        BRA INICIO
+POS     LDA POSITIVOS
+        ADD UM
+        STA POSITIVOS
+        BRA INICIO
+END     LDA POSITIVOS
+        OUT
+        LDA NEGATIVOS
+        OUT
+        HLT
+POSITIVOS DAT 0
+NEGATIVOS DAT 0
+UM      DAT 1

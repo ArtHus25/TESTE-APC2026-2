@@ -1,0 +1,13 @@
+INICIO  INP
+        SUB OPERADOR
+        BRZ END
+        LDA FINAL 
+        ADD UM
+        STA FINAL
+        BRA INICIO
+END     LDA FINAL
+        OUT
+        HLT
+FINAL   DAT 0
+OPERADOR DAT -1
+UM      DAT 1

@@ -1,0 +1,24 @@
+        INP
+        STA DIVIDENDO
+        INP
+        STA DIVISOR
+        LDA ZERO
+        STA QUOCIENTE
+LOOP    LDA DIVIDENDO
+        SUB DIVISOR
+        BRP CONT
+        LDA QUOCIENTE
+        OUT
+        LDA DIVIDENDO
+        OUT
+        HLT
+CONT    STA DIVIDENDO
+        LDA QUOCIENTE
+        ADD UM
+        STA QUOCIENTE
+        BRA LOOP
+DIVIDENDO DAT 0
+DIVISOR DAT 0
+QUOCIENTE DAT 0
+ZERO    DAT 0
+UM      DAT 1
