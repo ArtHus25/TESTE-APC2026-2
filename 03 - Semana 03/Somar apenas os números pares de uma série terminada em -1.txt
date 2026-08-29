@@ -1,0 +1,26 @@
+INICIO  INP
+        STA NUM
+        LDA NUM
+        ADD UM
+        BRZ FIM
+        LDA NUM
+        STA TESTE
+LOOP    LDA TESTE
+        SUB DOIS
+        BRZ SOMAR
+        BRP CONT
+        BRA INICIO
+CONT    STA TESTE
+        BRA LOOP
+SOMAR   LDA SOMA
+        ADD NUM
+        STA SOMA
+        BRA INICIO
+FIM     LDA SOMA
+        OUT
+        HLT
+NUM     DAT 0
+TESTE   DAT 0
+SOMA    DAT 0
+DOIS    DAT 2
+UM      DAT 1

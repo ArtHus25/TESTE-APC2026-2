@@ -112,3 +112,19 @@ Em seguida, o programa carrega **(NUM2)** novamente utilizando **(LDA)**, subtra
 |:--|:--:|:--:|
 |1;5;2;-1;-2;-3;0|3;3|O programa recebeu a série de números, conta quantos números positivos e quantos negativos foram digitados, e mostra na tela os dois valores depois do valor de parada 0. |
 |1;0;2;-1;-3;-4|2;3|O programa recebeu os valores de uma série os números positivos tinham menor quantidade que os negativos, recebeu o valor de parada 0 e mostrou os valores.|
+
+## 7. Somar apenas os números pares de uma série terminada em -1
+### **Objetivo**
+
+O programa recebe uma série terminada em -1, e soma somente os números pares e mostra o resultado.
+
+---
+### **Funcionamento**
+Primeiro recebe o input inicial do usuário **(NUM1)** e armazena o valor na memória **(datNUM1)**; recebe o segundo input **(NUM2)** e armazena o valor na memória **(datNUM2)**. Depois o programa entra no loop e carrega o valor de **(NUM1)** e mostra o primeiro número na saida **(OUT)**.
+Agora o programa precisa analisar se os números são iguais, então subtrai **(SUB)** os dois valores **(NUM1)** e **(NUM2)**; se o valor for igual a zero **(BRZ)** o programa manda encerrar a execussão **(HLT)**. 
+Caso o número ainda não seja igual o programa soma 1 **(ADD)** ao valor de atual **(NUM1 - NUM 2)** e armazena esse resultado em **(datNUM1)** e por fim manda o programa novamente para o loop**(BRA)** e repetir o processo até o final.
+
+|ENTRADA|SAÍDA|EXPLICAÇÃO|
+|:--|:--:|:--:|
+|10;2;1;3|12|O programa recebeu a sequência de números e somou somente os números pares 10 e 2 e mostrou o resultado em tela|
+|5;2;3;2;1;2|6|O programa recebeu a sequência de números e somou somente os pares e mostrou o resultado em tela|
