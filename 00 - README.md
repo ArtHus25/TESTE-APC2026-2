@@ -3,7 +3,7 @@ TESTE DE REPOSITORIO APC20262
 Repositório dos trabalhos e projetos realizados na disciplina de Algoritmos e Programação de Computadores.
 
 ALUNO: Artur Barbosa de Santana
- MATRÍCULA: 200015010
+MATRÍCULA: 200015010
 
 **Aula 01 — 10/08/2026**
 
