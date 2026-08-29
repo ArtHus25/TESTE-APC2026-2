@@ -3,13 +3,11 @@
 ## 1. Somar números digitados até o usuário digitar 0
 ### **Objetivo**
 
-O programa recebe valores, armazena e soma e mostra o resultado da soma dos números digitados até o entrada do valor 0.
+O programa recebe valores, armazena e soma os números digitados até a entrada do valor 0. Ao final, mostra o resultado da soma.
 
 ---
 ### **Funcionamento**
-Primeiro recebe o input inicial do usuário **(NUM1)** e armazena o valor na memória **(datNUM1)**; recebe o segundo input **(NUM2)** e armazena o valor na memória **(datNUM2)**. Depois o programa entra no loop e carrega o valor de **(NUM1)** e mostra o primeiro número na saida **(OUT)**.
-Agora o programa precisa analisar se os números são iguais, então subtrai **(SUB)** os dois valores **(NUM1)** e **(NUM2)**; se o valor for igual a zero **(BRZ)** o programa manda encerrar a execussão **(HLT)**. 
-Caso o número ainda não seja igual o programa soma 1 **(ADD)** ao valor de atual **(NUM1 - NUM 2)** e armazena esse resultado em **(datNUM1)** e por fim manda o programa novamente para o loop**(BRA)** e repetir o processo até o final.
+Primeiro, o programa recebe a entrada inicial e verifica se ela é igual a 0. Se for, imprime o resultado, que inicialmente é 0. Caso não seja, soma a entrada ao valor do resultado e retorna o programa para o início. 
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
@@ -20,17 +18,11 @@ Caso o número ainda não seja igual o programa soma 1 **(ADD)** ao valor de atu
 ## 2. Contar quantos números foram digitados até o usuário digitar -1
 ### **Objetivo**
 
-O Programa recebe vários valores de entrada e imprime em tela a quantidade valores foram recebidos até o receber -1.
+O programa recebe vários valores de entrada e mostra na tela a quantidade de valores recebidos até o usuário digitar -1.
 
 ---
 ### **Funcionamento**
-O programa recebe o valor de entrada **(N)** e armazena **(STA)** esse valor na memória. Em seguida, carrega o primeiro valor da sequência de Fibonacci **(FIB1)** e o mostra na saída **(OUT)**. Depois, carrega a variável que controla a posição inicial **(POS)**, adiciona **(ADD)** 1 e armazena o novo valor da posição **(STA)**. O segundo valor da sequência **(FIB2)** também é carregado e mostrado na saída **(OUT)**. A posição é novamente incrementada **(ADD)** em 1 e armazenada**(STA)**.
-
-Em seguida, o programa soma o primeiro valor **(FIB1)** com o segundo **(FIB2)** e armazena o resultado em uma terceira variável **(FIB)**, que também é mostrada na saída **(OUT)**. Depois, a posição atual **(POS)** é carregada, incrementada**(ADD)** em 1 e armazenada**(STA)** novamente.
-
-Para manter a sequência de Fibonacci, o valor de **(FIB2)** é armazenado em FIB1, enquanto o resultado da soma **(FIB)** é armazenado em **(FIB2)**. Dessa forma, os dois valores são atualizados para realizar as próximas somas.
-
-Por fim, o programa utiliza um loop com uma condicional para imprimir a quantidade de números definida pelo valor de entrada **(N)**. A posição **(POS)** é subtraída **(SUB)** do valor de entrada **(N)** e, enquanto o resultado for positivo **(BRP)**, o programa retorna para a soma dos novos valores de **(FIB1)** e **(FIB2)**. A cada número impresso, a posição é incrementada em 1. Quando POS atinge o valor de entrada N, a condição deixa de ser atendida e o programa é finalizado.**(HLT)**
+O programa recebe o valor inicial e testa para verificar se ele é igual a -1. Para isso, soma o valor com 1; se -1 + 1 = 0, significa que o valor recebido é -1, então o programa mostra o resultado na tela. Caso o valor não seja -1, soma 1 ao contador de números digitados e retorna ao início.
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
@@ -40,16 +32,12 @@ Por fim, o programa utiliza um loop com uma condicional para imprimir a quantida
 ## 3. Encontrar o menor valor de uma série de números terminada em -1
 ### **Objetivo**
 
-O programa recebe um série de números até o valor de parada -1 e mostra na tela o menor valor recebido dessa série
+O programa recebe uma série de números até o valor de parada -1 e mostra na tela o menor valor recebido dessa série.
 
 ---
 ### **Funcionamento**
+O programa recebe os números em sequência e verifica se cada entrada é igual a -1. Se for, o programa encerra e mostra o menor valor encontrado. Caso não seja, carrega o número e analisa se ele é menor que o valor armazenado anteriormente. Se for menor, guarda o novo valor como o menor número e retorna o programa para o início.
 
-O programa recebe os valores iniciais **(NUM1)** e **(NUM2)** e armazena **(STA)** ambos. Para multiplicarmos um números usamos uma soma **(ADD)** sucessiva do primeiro valor **(NUM1)** por ele mesmo igual ao valor da segunda entrada **(NUM2)**.
-
-Primeiramente, o programa verifica o segundo valor **(NUM2)** por meio de uma condicional. Se ele for igual a 0 **(BRZ)**, o programa carrega **(LDA)** a variável **(RESULTADO)**, que possui o valor inicial 0. Caso contrário, o programa carrega o primeiro valor **(NUM1)**, realiza a soma **(ADD)** com **(RESULTADO)** e armazena **(STA)** o novo resultado.
-
-Em seguida, o programa carrega **(NUM2)** novamente utilizando **(LDA)**, subtrai **(SUB)** 1 e armazena **(STA)** o novo valor. Depois, entra em um loop por meio de **(BRA)**, retornando para verificar novamente o valor de **(NUM2)**. Esse processo de soma sucessiva continua até que **(NUM2)** chegue a 0, imprimendo o valor do resultado e encerrando o programa.
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
@@ -63,12 +51,8 @@ O programa recebe um série de números até o valor de parada -1 e mostra na te
 
 ---
 ### **Funcionamento**
+O programa recebe os números em sequência e verifica se cada entrada é igual a -1. Se for, o programa encerra e mostra o maior valor encontrado. Caso não seja, carrega o número e analisa se ele é maior que o valor armazenado anteriormente. Se for maior, guarda o novo valor como o maior número e retorna o programa para o início.
 
-O programa recebe os valores iniciais **(NUM1)** e **(NUM2)** e armazena **(STA)** ambos. Para multiplicarmos um números usamos uma soma **(ADD)** sucessiva do primeiro valor **(NUM1)** por ele mesmo igual ao valor da segunda entrada **(NUM2)**.
-
-Primeiramente, o programa verifica o segundo valor **(NUM2)** por meio de uma condicional. Se ele for igual a 0 **(BRZ)**, o programa carrega **(LDA)** a variável **(RESULTADO)**, que possui o valor inicial 0. Caso contrário, o programa carrega o primeiro valor **(NUM1)**, realiza a soma **(ADD)** com **(RESULTADO)** e armazena **(STA)** o novo resultado.
-
-Em seguida, o programa carrega **(NUM2)** novamente utilizando **(LDA)**, subtrai **(SUB)** 1 e armazena **(STA)** o novo valor. Depois, entra em um loop por meio de **(BRA)**, retornando para verificar novamente o valor de **(NUM2)**. Esse processo de soma sucessiva continua até que **(NUM2)** chegue a 0, imprimendo o valor do resultado e encerrando o programa.
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
@@ -82,17 +66,15 @@ O programa recebe um série de números até o valor de parada -1, soma os valor
 
 ---
 ### **Funcionamento**
+O programa recebe uma série de entrada dos números até que o usuário digite -1, que funciona como um valor de sentinela para indicar o final da sequência. Esse valor não é considerado no cálculo da média.
+Depois que a entrada termina, o programa possui duas informações principais: a soma de todos os números e a quantidade de números digitados. A média é calculada dividindo a SOMA pela QTD.
+Ele subtrai a quantidade de números da soma repetidamente e, a cada subtração realizada, aumenta em 1 o valor da variável MEDIA. Quando não é mais possível realizar outra subtração sem obter um resultado negativo, o valor armazenado em MEDIA representa o resultado inteiro da divisão.
 
-O programa recebe os valores iniciais **(NUM1)** e **(NUM2)** e armazena **(STA)** ambos. Para multiplicarmos um números usamos uma soma **(ADD)** sucessiva do primeiro valor **(NUM1)** por ele mesmo igual ao valor da segunda entrada **(NUM2)**.
-
-Primeiramente, o programa verifica o segundo valor **(NUM2)** por meio de uma condicional. Se ele for igual a 0 **(BRZ)**, o programa carrega **(LDA)** a variável **(RESULTADO)**, que possui o valor inicial 0. Caso contrário, o programa carrega o primeiro valor **(NUM1)**, realiza a soma **(ADD)** com **(RESULTADO)** e armazena **(STA)** o novo resultado.
-
-Em seguida, o programa carrega **(NUM2)** novamente utilizando **(LDA)**, subtrai **(SUB)** 1 e armazena **(STA)** o novo valor. Depois, entra em um loop por meio de **(BRA)**, retornando para verificar novamente o valor de **(NUM2)**. Esse processo de soma sucessiva continua até que **(NUM2)** chegue a 0, imprimendo o valor do resultado e encerrando o programa.
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
-|10;5;2;1;-1|1|O programa recebeu a série de números, armazena os resultados, sempre procurando o menor valor, quando recebe o valor de parada -1 mostra o menor valor na tela. |
-|1;0;2;-1|0|O programa recebeu os valores buscou o menor e mostou na saída depois de receber o valor de parada -1|
+|10;8;7;15;-1|10|O programa recebeu a série de números, armazena os resultados, soma os valores e subtrai pela quantidade de números recebidos. |
+|10;2;-1|6|O programa receveu o a série de números, somou os valores 10 e 2 obtendo 12 e dividiu por 2 que foi a quantidade de números recebidos.|
 
 ## 6. Contar quantos números positivos e quantos negativos foram digitados em uma série terminada em 0
 ### **Objetivo**
@@ -101,12 +83,7 @@ O programa recebe um série de números até o valor de parada 0, conta separada
 
 ---
 ### **Funcionamento**
-
-O programa recebe os valores iniciais **(NUM1)** e **(NUM2)** e armazena **(STA)** ambos. Para multiplicarmos um números usamos uma soma **(ADD)** sucessiva do primeiro valor **(NUM1)** por ele mesmo igual ao valor da segunda entrada **(NUM2)**.
-
-Primeiramente, o programa verifica o segundo valor **(NUM2)** por meio de uma condicional. Se ele for igual a 0 **(BRZ)**, o programa carrega **(LDA)** a variável **(RESULTADO)**, que possui o valor inicial 0. Caso contrário, o programa carrega o primeiro valor **(NUM1)**, realiza a soma **(ADD)** com **(RESULTADO)** e armazena **(STA)** o novo resultado.
-
-Em seguida, o programa carrega **(NUM2)** novamente utilizando **(LDA)**, subtrai **(SUB)** 1 e armazena **(STA)** o novo valor. Depois, entra em um loop por meio de **(BRA)**, retornando para verificar novamente o valor de **(NUM2)**. Esse processo de soma sucessiva continua até que **(NUM2)** chegue a 0, imprimendo o valor do resultado e encerrando o programa.
+O programa recebe os valores e testa duas condições. Se o valor for 0, o programa para e imprime as quantidades de positivos e negativos, que inicialmente são 0. Caso não seja 0, o programa testa se o valor é positivo. Se for, carrega o contador de positivos e adiciona 1. Caso contrário, o número é negativo, então carrega o contador de negativos e adiciona 1. Depois desses passos, o programa retorna ao
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|
@@ -120,9 +97,9 @@ O programa recebe uma série terminada em -1, e soma somente os números pares e
 
 ---
 ### **Funcionamento**
-Primeiro recebe o input inicial do usuário **(NUM1)** e armazena o valor na memória **(datNUM1)**; recebe o segundo input **(NUM2)** e armazena o valor na memória **(datNUM2)**. Depois o programa entra no loop e carrega o valor de **(NUM1)** e mostra o primeiro número na saida **(OUT)**.
-Agora o programa precisa analisar se os números são iguais, então subtrai **(SUB)** os dois valores **(NUM1)** e **(NUM2)**; se o valor for igual a zero **(BRZ)** o programa manda encerrar a execussão **(HLT)**. 
-Caso o número ainda não seja igual o programa soma 1 **(ADD)** ao valor de atual **(NUM1 - NUM 2)** e armazena esse resultado em **(datNUM1)** e por fim manda o programa novamente para o loop**(BRA)** e repetir o processo até o final.
+Primeiro, o programa recebe um valor e testa para verificar se ele é igual a -1. Para isso, soma -1 + 1; se o resultado for 0, o programa para e imprime o valor da soma, que inicialmente é 0, indicando que a série está vazia.
+
+Caso o valor não seja -1, o programa testa se ele é um número par, realizando subtrações sucessivas de 2. Se o valor eventualmente chegar a 0, significa que ele é par. Nesse caso, o valor é armazenado para ser somado aos próximos números pares, e o programa retorna ao início.
 
 |ENTRADA|SAÍDA|EXPLICAÇÃO|
 |:--|:--:|:--:|

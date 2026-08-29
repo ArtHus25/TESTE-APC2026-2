@@ -59,3 +59,27 @@ Em seguida, foi realizado um teste de bancada, simulando manualmente a execuçã
 Por fim, depois de validar o algoritmo por meio do fluxograma e do teste de bancada, passamos para a implementação diretamente no LMC, utilizando suas instruções de entrada, saída, armazenamento, soma, subtração e desvio condicional para construir o programa.
 
 Esse processo mostrou a importância de entender o problema matematicamente antes de começar a programar, permitindo transformar uma ideia em uma sequência organizada de instruções que pode ser executada pelo computador.
+
+**Aula 05 - 24/08/2026**
+
+Nesta aula trabalhamos com a construção de algoritmos, dando continuidade ao estudo de estruturas de repetição e desvios condicionais no LMC. Foi apresentado o uso de um arcabouço para a construção de fluxogramas, que ajuda a organizar a lógica do programa antes de iniciar a implementação.
+
+O professor propôs o desafio de construir um programa no LMC com o objetivo de "encontrar o maior número de uma lista de números não negativos terminada em -1"!. Para resolver o problema, começamos pela elaboração de um fluxograma, no qual o programa primeiro recebe e testa o valor de entrada. Em seguida, os valores são comparados durante a repetição, atualizando o maior valor encontrado sempre que um número maior é identificado. O processo continua até que o valor -1 seja informado, indicando o fim da lista.
+
+Antes de construir o programa, realizamos um teste de entrada e saída desejada, definindo alguns valores que seriam utilizados como exemplo e verificando qual deveria ser o resultado produzido pelo algoritmo. Essa etapa ajuda a entender como o programa deve reagir diante de diferentes entradas e facilita a identificação de possíveis erros na lógica.
+
+Depois disso, construímos o fluxograma, identificando as etapas do algoritmo e nomeando os desvios condicionais responsáveis por direcionar o fluxo de execução. Somente após validar essa lógica passamos para a construção do algoritmo propriamente dito no LMC.
+
+Ao final da aula, foi entregue uma lista de exercícios para serem resolvidos em casa. A proposta é resolver pelo menos dois exercícios da lista sobre laços com sentinelas, que combinam estruturas de repetição com desvios condicionais. O objetivo é praticar esses conceitos e utilizá-los em conjunto na construção de pequenos algoritmos.
+
+**AULA 05 - 26/08/2026**
+
+Aula de laboratório 
+
+Durante a aula, vimos que uma forma de tornar os algoritmos mais organizados e eficientes é analisar os valores de entrada e, a partir deles, direcionar o programa para o caminho mais adequado. Dessa forma, o programa pode realizar os testes necessários antes de executar determinadas operações, evitando passos desnecessários.
+
+Durante a aula, também comecei a resolver os exercícios propostos na lista. Consegui concluir três exercícios, seguindo o mesmo processo utilizado na construção do algoritmo do desafio.
+
+Primeiro, defini a lógica de entrada e saída, pensando em quais valores o programa receberia e qual resultado deveria apresentar. Em seguida, construí o fluxograma, organizando as condições, repetições e possíveis caminhos que o programa poderia seguir.
+
+Depois de verificar a lógica no fluxograma, passei para a implementação do código no LMC. Esse processo ajudou a entender melhor como transformar uma ideia em um algoritmo e como utilizar os desvios condicionais e os laços de repetição para resolver diferentes problemas.
