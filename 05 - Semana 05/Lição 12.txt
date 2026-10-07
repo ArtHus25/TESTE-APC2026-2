@@ -1,0 +1,57 @@
+Lição 12: MOUSE INPUT
+Avaliação: 
+
+//Código em JavaScript
+
+var backdrop = createSprite(200,200);
+backdrop.setAnimation("sky");
+var creature = createSprite(200,250);
+creature.setAnimation("creature");
+creature.scale = 0.2;
+function draw() {
+  //shake the sprite when the mouse is pressed
+  if(mouseDown()){
+  creature.rotation = randomNumber(-5,5);
+  }
+   drawSprites();
+  //display the text when the mouse is NOT pressed
+  if(mouseDown()){
+    
+  }
+  else{
+  fill("black");
+  textSize(40);
+  text("Press the mouse to shake the creature.", 20, 50, 360, 100);
+}
+    
+  }
+
+Desafio:
+
+//Código em JavaScript
+
+World.frameRate = 20;
+var abelha = createSprite(200,200);
+abelha.setAnimation("bee");
+abelha.scale = 0.5;
+var abelha2 = createSprite(200,200);
+abelha2.setAnimation("bee2");
+abelha2.scale = 0.5;
+var abelha3 = createSprite(200,200);
+abelha3.setAnimation("bee3");
+abelha3.scale = 0.5;
+
+function draw(){
+  background("lightblue");
+  if(World.mouseX){
+    abelha.x = World.mouseX+ randomNumber(-50,50);
+    abelha2.x = World.mouseX + randomNumber(-40,40);
+    abelha3.x = World.mouseX + randomNumber(-30,40);
+  }
+  if(World.mouseY){
+    abelha.y = World.mouseY+randomNumber(-50,50);
+    abelha2.y = World.mouseY+randomNumber(-40,40);
+    abelha3.y = World.mouseY+randomNumber(-30,30);
+  }
+  drawSprites();
+}

@@ -1,0 +1,115 @@
+//Lição 9 SPRITE MOVEMENT
+
+Avaliação:
+
+//Código em JavaScript
+
+var orangeFish = createSprite(400, randomNumber(0, 100));
+orangeFish.setAnimation("orange_fish");
+orangeFish.rotation = 0;
+var blueFish = createSprite(250, randomNumber(0, 200));
+blueFish.setAnimation("blue_fish");
+blueFish.rotation = 0;
+var greenFish = createSprite(300, randomNumber(200, 300));
+greenFish.setAnimation("green_fish");
+greenFish.rotation = 0;
+var bolha1 = 400;
+
+
+function draw() {
+  // Draw Background
+  background("navy");
+  
+  // Update Values
+  if(keyDown("left")){
+  orangeFish.x = orangeFish.x - 2;
+  blueFish.x = blueFish.x - 4;
+  greenFish.x = greenFish.x - 1;
+  orangeFish.rotation = randomNumber(0,10);
+  blueFish.rotation = randomNumber(0,10);
+  greenFish.rotation = randomNumber(0,10);
+  }
+  
+noFill();
+stroke("white");
+strokeWeight(2);
+ellipse(200,bolha1,25,25);
+bolha1 = bolha1 - 2;
+noFill();
+stroke("white");
+strokeWeight(2);
+ellipse(100,bolha1 + 50,25,25);
+bolha1 = bolha1 - 2;
+noFill();
+stroke("white");
+strokeWeight(2);
+ellipse(300,bolha1 + 90,25,25);
+bolha1 = bolha1 - 2;
+  
+  
+  // Draw Animations
+  drawSprites();
+}
+
+Desafio:
+
+//Código em JavaScript
+
+var valorx1 = 10;
+var valorx2 = 10;
+var nave = createSprite(0,230);
+nave.setAnimation("Nave");
+nave.scale = 0.3;
+nave.rotation = 25;
+var robo = createSprite(0,350);
+robo.setAnimation("Robo");
+robo.scale = 0.15;
+robo.rotation = 0;
+function draw() {
+  
+  //
+  
+  background("black");
+  //
+  fill("yellow");
+  stroke("red");
+  strokeWeight(2);
+  ellipse(350,50,200,200);
+  //
+  noStroke();
+  fill("gray");
+  ellipse(50,50,45,45);
+  //
+  noFill();
+  stroke("lightblue");
+  strokeWeight(1);
+  ellipse(50,50,100,20);
+  //
+  stroke("white");
+  strokeWeight(2);
+  point(18, 18);
+  point(82, 22);
+  point(38, 14);
+  point(79, 49);
+  point(101, 15);
+  point(119, 35);
+  point(143, 22);
+  point(162, 47);
+  point(184, 31);
+  point(207, 12);
+  point(225, 39);
+  point(238, 25);
+  //
+  stroke("white");
+  strokeWeight(1);
+  text("Que Rápido!",valorx1 - 30,300);
+  text("Come Poeira!!!",valorx2 - 30,180);
+  //
+  valorx1 = valorx1 + 2;
+  valorx2 = valorx2 + 4;
+  nave.x = valorx2;
+  robo.x = valorx1;
+  
+  robo.rotation = randomNumber(0,10);
+drawSprites();
+}

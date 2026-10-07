@@ -1,0 +1,67 @@
+Lição 11: KEYBOARD INPUT
+Avaliação:
+
+//Código em JavaScript
+
+var backdrop = createSprite(200,200);
+backdrop.setAnimation("rainbow");
+var flyer = createSprite(200,200);
+flyer.setAnimation("wing_bot");
+
+function draw() {
+    //move left when the left arrow is pressed
+  if(keyDown("left")){
+    flyer.x = flyer.x - 2;
+  }
+    //move right when the right arrow is pressed
+  if(keyDown("right")){
+    flyer.x = flyer.x + 2;
+    }
+   //move up when the up arrow is pressed
+    if(keyDown("up")){
+      flyer.y = flyer.y - 2;
+    }
+    //move down when the down arrow is pressed
+    if(keyDown("down")){
+      flyer.y = flyer.y + 2;
+    }
+  
+  drawSprites();
+}
+
+Desafio:
+
+//Código em JavaScript
+
+var bug = createSprite(200, 200);
+bug.setAnimation("fly");
+
+function draw() {
+  //Draw Background
+  background("white");
+  
+  // Update Values
+  if(keyDown("up")){
+    bug.setAnimation("flyup");
+    bug.y = bug.y - 5;
+
+  }
+  if(keyDown("down")){
+    bug.setAnimation("flydown");
+    bug.y = bug.y + 5;
+
+  }
+  if(keyDown("left")){
+    bug.setAnimation("flyleft");
+    bug.x = bug.x - 5;
+
+  }
+  if(keyDown("right")){
+   bug.setAnimation("flyright");
+    bug.x = bug.x + 5;
+
+  }
+
+  //Draw Animations
+  drawSprites();
+}

@@ -1,0 +1,88 @@
+# Lição 17 : Functions
+
+**Avaliação:** Nessa Avaliação usamos a function para deixar um background pronto, isso deixa o programa mais organizado. Usando condicional quando o pontos chegarem a 10, usamos o function para imprimir uma mensagem na tela,
+a minha eu escolhi "NICE YOU GOT 10!!". 
+
+```JavaScript
+var coin = createSprite(200,10);
+coin.setAnimation("coin_gold_1");
+setCoin();
+var bunny = createSprite(200,350);
+bunny.setAnimation("bunny1_ready_1");
+
+var score = 0;
+
+function draw() {
+  background("white");
+  
+  if(keyDown("left")){
+    bunny.x = bunny.x - 2;
+  }
+  
+  if(keyDown("right")){
+    bunny.x = bunny.x + 2;
+  }
+  
+  if(coin.y > 400){
+    setCoin();
+  }
+  if (coin.isTouching(bunny)){
+    setCoin();
+    score = score + 1;
+  }
+  if(score == 10){
+    setfundo();
+  }
+  
+  textSize(20);
+  text("Score: " + score, 10, 10, 100, 100);
+  drawSprites();
+}
+
+function setCoin(){
+  coin.y = -10;
+  coin.x = randomNumber(0,300);
+  coin.velocityY = randomNumber(5,8);
+
+}
+function setfundo(){
+    fill("black");
+    textSize(30);
+  text("NICE YOU GOT 10!!" , 80,200);
+  drawSprites();
+  
+}
+```
+
+**Desafio:** Nessa Desafio temos que construir todo um cenário e deixar pronto dentro da function, ele só será impresso apartir da condicional desejada, eu escolhi o movimento do mouse em Y. O programa atende a condicional imprimindo o cenário já pronto guardado na function. 
+
+```JavaScript
+function draw() {
+  if(World.mouseY > 200){
+    drawScene1();
+  } else {
+    drawScene2();
+  }
+}
+function drawScene1(){
+  background("black");
+  fill("gray");
+  ellipse(200,0,220,220);
+  fill("yellow");
+  noStroke();
+  ellipse(randomNumber(10,300),randomNumber(10,300),5,5);
+  fill("green");
+  strokeWeight(25);
+  stroke("lightblue");
+  ellipse(World.mouseX,300,80,80);
+}
+function drawScene2(){
+  background("lightblue");
+  fill("green");
+  noStroke();
+  ellipse(200,400,450,200);
+  fill("yellow");
+  ellipse(World.mouseX,50,60,60);
+ 
+}
+```
