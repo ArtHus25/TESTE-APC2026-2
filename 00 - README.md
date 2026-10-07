@@ -218,6 +218,8 @@ https://studio.code.org/projects/gamelab/e5493877-d80e-45dc-bbe0-1adf0aa068da
 
 **AULA 11 - 14/09/2026**
 
+Continuamos com JavaScript caminhando para concluir as 18 atividades do curso do GameLab dentro da plataforma.
+
 **AULA 12 - 16/09/2026**
 
 Aula de laboratório
@@ -287,7 +289,7 @@ Semana Universitária
 
 **AULA 12 - 28/09/2026**
 
-Indrodução a linguagem C.Nesta aula, começamos a estudar a linguagem C utilizando inicialmente a plataforma Python Tutor, que permite acompanhar a execução do código e entender melhor o que acontece durante o funcionamento do programa.
+Nesta aula, começamos a estudar a linguagem C utilizando inicialmente a plataforma Python Tutor, que permite acompanhar a execução do código e entender melhor o que acontece durante o funcionamento do programa.
 
 O C é utilizado em diversas áreas, principalmente no desenvolvimento de sistemas operacionais, programas, softwares embarcados e outros sistemas que precisam de bom desempenho. Além disso, várias linguagens de programação modernas foram influenciadas pela linguagem C.
 
